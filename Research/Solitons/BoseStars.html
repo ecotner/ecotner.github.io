@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Boson Stars</title>
+		<style type="text/css">
+			body {background:white}
+			:link {color:blue}
+			:visited {color:purple}
+			a:hover {color:red}
+			h1 {color:black; font-family:Arial;}
+			p {color:black; font-family:Arial; margin-top:0; margin-bottom:0; font-size:20px;}
+			div {background-color:transparent width:100%;}
+			ul {color:black; font-family:Arial; font-size:20px;}
+		</style>
+		<meta name="description" content="Boson star research">
+		<meta name="author" content="Eric Cotner">
+		<meta name="keywords" content="Eric,Cotner,physics,high,energy,theory,UCLA,UCSD,dark,matter,particle,research,cosmology,quantum,field,theory,boson,star,bose,gravity,scalar,field,collision">
+		
+	</head>
+	
+	<body>
+		<div id="container" style="width:100%;">
+			<div id="header" style="width:90%; margin-left:5%; margin-right:5%;">
+				<h1 align="center">Boson Stars</h1>
+				<hr />
+			</div>
+			<div id="content" style="width:90%; margin-left:5%; margin-right:5%;">
+				<p>&emsp; This part of my research is about modeling the gravitational collapse and evolution of cold scalar particles into a "Boson star", and the subsequent
+				evolution and interactions of this type of object. Using these results, I hope to be able to be able to explain experimental
+				data on the distribution of dark matter in galaxies and dark matter self-interaction cross section limits, or apply their interesting properties to
+				cosmological scenarios.</p>
+				<p>&emsp; When created through some non-thermal mechanism (like the Afflec-Dine process, or vacuum realignment in the case of axions), scalar particles form a
+				Bose-Einstein condensate (BEC), which can be treated as a macroscopic wavefunction.
+				This then allows us to use the Schrodinger equation to solve for the time evolution and equilibrium states of the BEC. The gravitational and self
+				interactions between field makes this equation highly nonlinear and nonlocal (often referred to as the NNSE or Nonlinear Nonlocal Schrodinger
+				Equation), and requires either approximate solutions using the variational method, or numerical codes to solve properly. Their properties are very interesting:
+				it appears that the more massive the condensate, the more tightly it is bound, and so heavy boson stars are actually incredibly dense. Some even believe that they
+				would make good candidates for black hole mimickers, and could explain the supermassive black holes at the center of the Milky Way and other galaxies. Their
+				radius is inversely related to the mass of the scalar field, and so stars made of very light bosons can be very large. Condenstates with particle mass of
+				$10^{-23}$ eV can be hundreds of kiloparsecs across, and could explain why the Galactic nucleus has a dark matter core as opposed to the cusp predicted by CDM
+				simulations.</p>
+				<p>&emsp; I am currently investigating various types of numerical methods to model the
+				time evolution of the BEC collapse into a Bose star, from which we can extract the timescale of collapse, spatial distribution, binding energy,
+				mass, and other properties of this gravitationally bound state. Below are the results of a toy Mathematica simulation on a 25x25 grid in two dimensions of the collapse of
+				a BEC to several Bose stars through the Jeans instability which then merge together before the simulation becomes numerically unstable.</p>
+				<center><img src="http://imgur.com/EWIKeMw.gif" width="350px"/></center>
+				<p>Here we see the interaction between two gravitationally bound Bose stars. The radial oscillation that is occurring in each soliton is due to the
+				fact that the stars are not in their energy eigenstates. This simulation was performed on a 40x40 grid in two dimensions, utilizing a new algorithm
+				in C to speed up computation.</p>
+				<center><img src="http://imgur.com/k1XpnxO.gif" width="350px"/></center>
+				<p>This is a simulation of a merger between two Bose stars (in 3D!). We can see that despite having no interactions besides gravity, the solitons will stick together, forming
+				some weird lobed structure. This may be an excited, stable state; more research is ongoing to determine this.
+				<center><img src="http://imgur.com/OMC82pl.gif" width="350px" /></center>
+				<br />
+				<p>Here's a <a href="https://conferences.pa.ucla.edu/pacific2016/talks/cotner.pdf">presentation</a> I gave on the subject at the <a href="https://conferences.pa.ucla.edu/pacific2016/index.html">2016 PACIFIC Conference</a>.</p>
+				<br />
+				<p>You can find the animations corresponding to my paper, <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.94.063503"><i>Collisional interactions between self-interacting nonrelativistic boson stars: Effective
+				potential analysis and numerical simulations</i></a> (arXiv:<a href="https://arxiv.org/abs/1608.00547">1608.00547</a>), below.</p>
+				<br />
+				<ul>
+					<li>Animations</li>
+					<ol>
+						<li><a href="http://imgur.com/jjaO6sc.gifv">Equal mass, weakly self-interacting, in phase merger</a></li>
+						<li><a href="http://imgur.com/t2KNBuN.gifv">Equal mass, weakly self-interacting, in phase, high initial velocity scattering</a></li>
+						<li><a href="http://imgur.com/jDxHuyw.gifv">Equal mass, weakly self-interacting, out of phase scattering</a></li>
+						<li><a href="http://imgur.com/jRmoJGa.gifv">Equal mass, strongly self-interacting, out of phase scattering</a></li>
+						<li><a href="http://imgur.com/HLVX9rO.gifv">Asymmetric mass, weakly self-interacting, out of phase merger</a></li>
+						<li><a href="http://imgur.com/dnRKisp.gifv">Asymmetric mass, strongly self-interacting, in phase merger</a></li>
+						<li><a href="http://imgur.com/wUQIVGk.gifv">Single unstable solition fracturing</a>&emsp;(<a href="http://imgur.com/h5BN1Ki.gifv">Without fluctuations</a>)</li>
+					</ol>
+				</ul>
+			</div>
+			<div id="footer" style="width:90%; margin-left:5%; margin-right:5%;" align="center">
+				<br />
+				<a href="../../index.html">Home</a>&emsp;<a href="../UCLAResearch.html">Research</a>
+			</div>
+		</div>
+	</body>
+</html>
